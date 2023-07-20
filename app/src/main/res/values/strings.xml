@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Vorbind</string>
+
+    <!--    Strings for MainActivity-->
+    <string name="logo_content">Logo</string>
+    <string name="main_activity_from">from</string>
+    <string name="developer_name">Horizon</string>
+
+    <!--    Strings for LoginScreen-->
+    <string name="heading_login_screen">Enter Your Phone Number</string>
+    <string name="country_code_picker">+91</string>
+    <string name="number_hint">***** *****</string>
+
+    <!--    Keypad-->
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="backspace">Back</string>
+    <string name="next">Next</string>
+
+    <string name="name_heading">Name</string>
+    <string name="about_heading">About</string>
+    <string name="create_profile">Save</string>
+    <string name="no_chat_found">No Chat Found!</string>
+    <string name="home">Home</string>
+    <string name="enter_otp">Enter OTP</string>
+
+
+</resources>

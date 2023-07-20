@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "599716953948",
+    "firebase_url": "https://vorbind-default-rtdb.firebaseio.com",
+    "project_id": "vorbind",
+    "storage_bucket": "vorbind.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599716953948:android:859b8357a205f7ab03cb99",
+        "android_client_info": {
+          "package_name": "io.vorbind.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599716953948-2j6mafpqovvi166hm68lkben0erjjo20.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.vorbind.chat",
+            "certificate_hash": "6dd5fce4ad66b05c04c49f9b7cf189bf0998b2c8"
+          }
+        },
+        {
+          "client_id": "599716953948-9trehfq249jmnvh8g3gsul2cdrjruchk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD91AjZuY6NgrO7qyGV2XX0MvPB4UXt1mQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599716953948-9trehfq249jmnvh8g3gsul2cdrjruchk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

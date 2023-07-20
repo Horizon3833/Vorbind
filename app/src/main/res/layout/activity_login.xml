@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_background"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/heading_login_screen"
+            android:textColor="@color/custom_light_blue"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="@color/light_grey"
+            android:textColor="@color/white"
+            app:itemCount="6"
+            app:itemSpacing="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading"
+            app:lineColor="@color/custom_background"
+            app:lineWidth="4dp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:id="@+id/phoneNumberInputSection"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/borderbox"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    app:ccp_countryPreference="us,in,ca"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/custom_light_blue" />
+
+            <EditText
+                android:id="@+id/PhoneTextBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="50dp"
+                android:background="@drawable/phonenumbertextbox"
+                android:color="@color/black"
+                android:cursorVisible="true"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:typeface="monospace"
+                app:ccp_countryPreference="US,IN,NZ,CA"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/one"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background" />
+
+                <Button
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/two"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/three"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/four"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/five"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/five"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/six"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/six"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/seven"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/eight"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/nine"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/zero"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/numberbox"
+                    android:text="@string/zero"
+                    android:textSize="20sp"
+                    style="@style/NumberBox"
+                    app:backgroundTint="@color/custom_background"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="15dp">
+
+                    <Button
+                        android:id="@+id/backspace"
+                        style="@style/CustomButtons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_backspace_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:backgroundTint="@color/custom_light_blue"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next"
+            style="@style/CustomButtons"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderbox"
+            android:text="@string/next"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberInputSection"
+            app:layout_constraintVertical_bias="0.515" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
